@@ -18,14 +18,14 @@ var testFunction = function() {
   var args = Array.prototype.slice.call(arguments);
 
   var a = args.shift();
-  console.log("The first argument is: %s", a);
+  console.log('The first argument is: %s', a);
 
 };
 
 testFunction('test');
 
-// Array - this is the name of the base object that we want
-// Prototype - this can be thought of as the namespace for the instance methods of an array\
-// Slice - this extracts a section of an array and returns a new array, and without a beginning and ending index, it simply returns a copy of the array
+// array - this is the name of the base object that we want
+// prototype - this can be thought of as the namespace for the instance methods of an array\
+// slice - this extracts a section of an array and returns a new array, and without a beginning and ending index, it simply returns a copy of the array
 // call - this is a very useful function, it allows you to call a function from one object and use it in the context of another
 
