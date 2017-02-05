@@ -1,5 +1,3 @@
-
-
 // There are three ways to create object in JavaScript
 // Functional syntax (constructor), Object.create, object literals
 // Rules for using a specific way of creating object:
@@ -10,30 +8,29 @@
 // Functional syntax (constructor)
 var Person = function(firstName, lastName) {
 	this.firstName = firstName;
-    this.lastName = lastName;
+	this.lastName = lastName;
 };
 
 var john = new Person('John', 'AAA');
 
 Person.prototype.fullName = function() {
-    return this.firstName + ' ' + this.lastName;
+	return this.firstName + ' ' + this.lastName;
 };
 
 console.log(john);
-
 console.log(john.fullName());
 
 // Object.create
 
 var superHuman = {
-    usePower: function () {
-        console.log(this.superPower + '!');
-    }
+	usePower: function () {
+		console.log(this.superPower + '!');
+	}
 };
 
 var banshee = Object.create(superHuman, {
-    name: { value: 'Silver Banshee' },
-    superPower: { value: 'sonic wail' }
+	name: { value: 'Silver Banshee' },
+	superPower: { value: 'sonic wail' }
 });
 
 banshee.usePower();
